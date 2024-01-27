@@ -1,0 +1,8 @@
+const START_PLAYING = "START_PLAYING";
+const LEVELUP = "LEVELUP";
+const SUCCESS = "SUCCESS";
+const LOSE = "LOSE";
+const REPLAY = "REPLAY";
+const EXIT = "EXIT";
+
+export { LEVELUP, SUCCESS, LOSE, START_PLAYING, REPLAY, EXIT };

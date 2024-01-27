@@ -1,38 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  background: #e60099;
+}
+
+.FirstPage,
+.LosePage,
+.WinPage {
   text-align: center;
+  height: 100vh;
+  padding: 20vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.FirstPage h3 {
+  font-size: 50px;
+  color: rgb(76, 0, 182);
+  padding: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.FirstPage button {
+  font-size: 40px;
+  font-weight: bold;
+  color: beige;
+  padding: 3% 8%;
+  border-radius: 15px;
+  border: transparent;
+  background-color: rgb(25, 0, 255);
+}
+
+.container {
+  text-align: center;
+  height: 100vh;
+  padding: 5vh 25vw 20vh;
+}
+
+.container h1 {
+  padding: 0 3% 5%;
+  color: beige;
+}
+
+.container h1 span {
+  color: green;
+}
+
+.buttonsContainer {
+  height: 100%;
+}
+
+.correct {
+  background: green;
+}
+
+.notCorrect {
+  background: red;
+}
+
+.firstClickable {
+  background: rgb(143, 152, 230);
+}
+
+.firstNotClickable {
+  background: rgb(74, 93, 157);
+}
+
+.clickable,
+.notClickable {
+  background: rgb(74, 93, 157);
+}
+
+.LosePage h1,
+.WinPage h1 {
+  font-size: 50px;
+  color: rgb(76, 0, 182);
+  padding-bottom: 5%;
+}
+
+.LosePage p {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 5%;
+}
+
+.LosePage button,
+.WinPage button {
+  font-size: 40px;
+  color: beige;
+  padding: 20px 40px;
+  margin: 0 20px;
+  border-radius: 15px;
+  border: transparent;
+  background-color: rgb(25, 0, 255);
+}
+
+@media screen and (min-width: 1281px) {
+  .FirstPage,
+  .LosePage,
+  .WinPage {
+    text-align: center;
+    height: 100vh;
+    padding: 10vw 20vw;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container {
+    text-align: center;
+    height: 100vh;
+    padding: 5vh 30vw 20vh;
   }
-  to {
-    transform: rotate(360deg);
+  .container h1 {
+    padding: 0 3% 5%;
+    color: beige;
+  }
+
+  .container h1 span {
+    color: green;
+  }
+
+  .buttonsContainer {
+    height: 100%;
+  }
+
+  .LosePage button,
+  .WinPage button {
+    font-size: 40px;
+    color: beige;
+    padding: 15px 30px;
+    margin: 0 20px;
+    border-radius: 15px;
+    border: transparent;
+    background-color: rgb(25, 0, 255);
   }
 }
